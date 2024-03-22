@@ -7,6 +7,8 @@ set list
 set number
 set relativenumber
 
+""" Stop Ctrl-Z from suspending nvim
+:nnoremap <c-z> <nop>
 
 """ PLUGINS, no longer vim script but lua(?)
 call plug#begin('~/.vim/plugged')
@@ -23,6 +25,8 @@ Plug 'nvim-treesitter/nvim-treesitter' , {'do': ':TSUpdate'}
 Plug 'f-person/git-blame.nvim'
 
 Plug 'numToStr/Comment.nvim'
+
+Plug 'nvim-lua/lsp-status.nvim'
 
 call plug#end()
 
